@@ -1,4 +1,4 @@
-
+let show=()=>{
 $.getJSON("/shoes",(data)=>{
   
   for (let i=0;i<data.length;i++){
@@ -7,5 +7,13 @@ $.getJSON("/shoes",(data)=>{
 
   }
 });
+}
 
+show();
 
+$("#scrape").on("click",()=>{
+  $.get('/scrape',()=>{
+    $("#shoes").empty();
+    show();
+  })
+})
