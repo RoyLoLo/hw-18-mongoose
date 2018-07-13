@@ -11,7 +11,7 @@ const db = require('./models');
 //source url
 const source = "https://solecollector.com/sneaker-release-dates/all-release-dates"
 
-const PORT = 9999;
+const PORT = porcess.env.PORT || 9999;
 const app = xps();
 //morgan to log requests
 app.use(log('dev'));

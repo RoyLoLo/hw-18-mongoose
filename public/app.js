@@ -9,7 +9,10 @@ $.getJSON("/shoes",(data)=>{
 });
 }
 
+
 show();
+
+
 
 $("#scrape").on("click",()=>{
   $.get('/scrape',()=>{
