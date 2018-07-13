@@ -1,4 +1,4 @@
 module.exports = {
-  Story : require('./Story'),
+  Shoe : require('./Shoe'),
   Comment : require('./Comment')
 }

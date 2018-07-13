@@ -4,18 +4,19 @@ const schema = mg.Schema;
 let SS = new schema({
   title : {
     type : String,
-    // required : true
+    required : true
   },
   img : {
     type : String,
-    // required : true
+    required : true
   },
   link : {
     type : String,
-    // required : true
+    unique : true,
+    required : true
   }
 });
 
-let Story = mg.model("Story", SS);
+let Shoe = mg.model("Shoe", SS);
 
-module.exports = Story;
+module.exports = Shoe;

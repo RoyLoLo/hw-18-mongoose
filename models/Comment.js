@@ -2,11 +2,11 @@ const mg = require('mongoose');
 
 const schema = mg.Schema;
 
-let CS = new schema({
-  name : String,
-  comment : String
+let score = new schema({
+    comment : String,
+    score : Number
 });
 
-let C = mg.model('Comment',CS);
+let S = mg.model('Comment',score);
 
-module.exports = C;
+module.exports = S;
